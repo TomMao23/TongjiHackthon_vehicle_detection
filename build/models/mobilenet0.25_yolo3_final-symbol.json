@@ -1,0 +1,6359 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 3, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm0_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm0_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm0_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm0_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm0_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[2, 0, 0], [3, 0, 0], [4, 0, 0], [5, 0, 2], [6, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu0_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[7, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv1_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "8", 
+        "num_group": "8", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[8, 0, 0], [9, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm1_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm1_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm1_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm1_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm1_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[10, 0, 0], [11, 0, 0], [12, 0, 0], [13, 0, 2], [14, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu1_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[15, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv2_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 8, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv2_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[16, 0, 0], [17, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm2_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm2_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm2_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm2_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm2_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[18, 0, 0], [19, 0, 0], [20, 0, 0], [21, 0, 2], [22, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu2_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[23, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv3_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv3_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "16", 
+        "num_group": "16", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[24, 0, 0], [25, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm3_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm3_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm3_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm3_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm3_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[26, 0, 0], [27, 0, 0], [28, 0, 0], [29, 0, 2], [30, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu3_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[31, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv4_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 16, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv4_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[32, 0, 0], [33, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm4_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm4_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm4_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm4_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm4_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[34, 0, 0], [35, 0, 0], [36, 0, 0], [37, 0, 2], [38, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu4_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[39, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv5_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv5_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "num_group": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[40, 0, 0], [41, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm5_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm5_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm5_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm5_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm5_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[42, 0, 0], [43, 0, 0], [44, 0, 0], [45, 0, 2], [46, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu5_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[47, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv6_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 32, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv6_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[48, 0, 0], [49, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm6_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm6_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm6_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm6_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm6_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[50, 0, 0], [51, 0, 0], [52, 0, 0], [53, 0, 2], [54, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu6_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[55, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv7_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv7_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "num_group": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[56, 0, 0], [57, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm7_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm7_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm7_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm7_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm7_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[58, 0, 0], [59, 0, 0], [60, 0, 0], [61, 0, 2], [62, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu7_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[63, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv8_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 32, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv8_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[64, 0, 0], [65, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm8_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm8_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm8_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm8_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm8_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[66, 0, 0], [67, 0, 0], [68, 0, 0], [69, 0, 2], [70, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu8_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[71, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv9_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv9_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "num_group": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[72, 0, 0], [73, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm9_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm9_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm9_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm9_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm9_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[74, 0, 0], [75, 0, 0], [76, 0, 0], [77, 0, 2], [78, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu9_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[79, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv10_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 64, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv10_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[80, 0, 0], [81, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm10_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm10_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm10_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm10_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm10_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[82, 0, 0], [83, 0, 0], [84, 0, 0], [85, 0, 2], [86, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu10_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[87, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv11_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv11_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "num_group": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[88, 0, 0], [89, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm11_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm11_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm11_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm11_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm11_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[90, 0, 0], [91, 0, 0], [92, 0, 0], [93, 0, 2], [94, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu11_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[95, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv12_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 64, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv12_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[96, 0, 0], [97, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm12_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm12_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm12_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm12_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm12_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[98, 0, 0], [99, 0, 0], [100, 0, 0], [101, 0, 2], [102, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu12_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[103, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv13_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv13_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[104, 0, 0], [105, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm13_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm13_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm13_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm13_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm13_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[106, 0, 0], [107, 0, 0], [108, 0, 0], [109, 0, 2], [110, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu13_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[111, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv14_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv14_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[112, 0, 0], [113, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm14_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm14_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm14_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm14_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm14_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[114, 0, 0], [115, 0, 0], [116, 0, 0], [117, 0, 2], [118, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu14_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[119, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv15_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv15_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[120, 0, 0], [121, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm15_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm15_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm15_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm15_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm15_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[122, 0, 0], [123, 0, 0], [124, 0, 0], [125, 0, 2], [126, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu15_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[127, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv16_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv16_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[128, 0, 0], [129, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm16_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm16_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm16_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm16_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm16_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[130, 0, 0], [131, 0, 0], [132, 0, 0], [133, 0, 2], [134, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu16_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[135, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv17_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv17_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[136, 0, 0], [137, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm17_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm17_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm17_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm17_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm17_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[138, 0, 0], [139, 0, 0], [140, 0, 0], [141, 0, 2], [142, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu17_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[143, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv18_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv18_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[144, 0, 0], [145, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm18_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm18_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm18_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm18_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm18_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[146, 0, 0], [147, 0, 0], [148, 0, 0], [149, 0, 2], [150, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu18_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[151, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv19_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv19_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[152, 0, 0], [153, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm19_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm19_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm19_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm19_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm19_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[154, 0, 0], [155, 0, 0], [156, 0, 0], [157, 0, 2], [158, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu19_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[159, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv20_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv20_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[160, 0, 0], [161, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm20_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm20_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm20_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm20_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm20_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[162, 0, 0], [163, 0, 0], [164, 0, 0], [165, 0, 2], [166, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu20_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[167, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv21_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv21_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[168, 0, 0], [169, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm21_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm21_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm21_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm21_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm21_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[170, 0, 0], [171, 0, 0], [172, 0, 0], [173, 0, 2], [174, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu21_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[175, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv22_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv22_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[176, 0, 0], [177, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm22_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm22_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm22_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm22_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm22_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[178, 0, 0], [179, 0, 0], [180, 0, 0], [181, 0, 2], [182, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu22_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[183, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv23_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv23_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[184, 0, 0], [185, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm23_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm23_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm23_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm23_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm23_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[186, 0, 0], [187, 0, 0], [188, 0, 0], [189, 0, 2], [190, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu23_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[191, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv24_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv24_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[192, 0, 0], [193, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm24_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm24_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm24_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm24_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm24_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[194, 0, 0], [195, 0, 0], [196, 0, 0], [197, 0, 2], [198, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu24_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[199, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv25_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 1, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv25_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[200, 0, 0], [201, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm25_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm25_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm25_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm25_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm25_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[202, 0, 0], [203, 0, 0], [204, 0, 0], [205, 0, 2], [206, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu25_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[207, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_conv26_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "mobilenet0_conv26_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[208, 0, 0], [209, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm26_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm26_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm26_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "mobilenet0_batchnorm26_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "mobilenet0_batchnorm26_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[210, 0, 0], [211, 0, 0], [212, 0, 0], [213, 0, 2], [214, 0, 2]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "mobilenet0_relu26_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[215, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[216, 0, 0], [217, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm0_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm0_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm0_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm0_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm0_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[218, 0, 0], [219, 0, 0], [220, 0, 0], [221, 0, 2], [222, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu0_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[223, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512, 256, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv1_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "512", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[224, 0, 0], [225, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm1_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm1_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm1_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm1_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm1_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[226, 0, 0], [227, 0, 0], [228, 0, 0], [229, 0, 2], [230, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu1_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[231, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv2_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 512, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv2_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[232, 0, 0], [233, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm2_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm2_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm2_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm2_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm2_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[234, 0, 0], [235, 0, 0], [236, 0, 0], [237, 0, 2], [238, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu2_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[239, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv3_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512, 256, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv3_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "512", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[240, 0, 0], [241, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm3_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm3_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm3_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm3_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm3_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[242, 0, 0], [243, 0, 0], [244, 0, 0], [245, 0, 2], [246, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu3_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[247, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv4_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 512, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv4_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[248, 0, 0], [249, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm4_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm4_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm4_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm4_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm4_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[250, 0, 0], [251, 0, 0], [252, 0, 0], [253, 0, 2], [254, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu4_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[255, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_conv5_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512, 256, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv30_conv5_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "512", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[256, 0, 0], [257, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm5_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm5_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm5_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm5_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(512,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv30_batchnorm5_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[258, 0, 0], [259, 0, 0], [260, 0, 0], [261, 0, 2], [262, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv30_leakyrelu5_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[263, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv30_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27, 512, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv30_conv0_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolooutputv30_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "27", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[264, 0, 0], [265, 0, 0], [266, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv30_reshape0", 
+      "attrs": {"shape": "(0, 27, -1)"}, 
+      "inputs": [[267, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv30_transpose0", 
+      "attrs": {"axes": "(0, 2, 1)"}, 
+      "inputs": [[268, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv30_reshape1", 
+      "attrs": {"shape": "(0, -1, 3, 9)"}, 
+      "inputs": [[269, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv30_slice_axis3", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "5", 
+        "end": "None"
+      }, 
+      "inputs": [[270, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv30_sigmoid2", 
+      "inputs": [[271, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv30_slice_axis2", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "4", 
+        "end": "5"
+      }, 
+      "inputs": [[270, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv30_sigmoid1", 
+      "inputs": [[273, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv30_broadcast_mul1", 
+      "inputs": [[272, 0, 0], [274, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv30_transpose1", 
+      "attrs": {"axes": "(3, 0, 1, 2)"}, 
+      "inputs": [[275, 0, 0]]
+    }, 
+    {
+      "op": "expand_dims", 
+      "name": "yolov30_yolooutputv30_expand_dims0", 
+      "attrs": {"axis": "-1"}, 
+      "inputs": [[276, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv30__mulscalar2", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[277, 0, 0]]
+    }, 
+    {
+      "op": "_arange", 
+      "name": "yolov30_yolooutputv30__arange0", 
+      "attrs": {
+        "dtype": "float32", 
+        "infer_range": "False", 
+        "repeat": "1", 
+        "start": "0", 
+        "step": "1.0", 
+        "stop": "4"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv30_reshape3", 
+      "attrs": {"shape": "(0, 1, 1, 1, 1)"}, 
+      "inputs": [[279, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv30_broadcast_add1", 
+      "inputs": [[278, 0, 0], [280, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv30_slice_axis0", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "0", 
+        "end": "2"
+      }, 
+      "inputs": [[270, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv30_sigmoid0", 
+      "inputs": [[282, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv30_offset_0", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv30_offset_0_140536354995392", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 128, 128, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv30__mulscalar0", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[264, 0, 0]]
+    }, 
+    {
+      "op": "slice_like", 
+      "name": "yolov30_yolooutputv30_slice_like0", 
+      "attrs": {"axes": "(2, 3)"}, 
+      "inputs": [[284, 0, 0], [285, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv30_reshape2", 
+      "attrs": {"shape": "(1, -1, 1, 2)"}, 
+      "inputs": [[286, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv30_broadcast_add0", 
+      "inputs": [[283, 0, 0], [287, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv30__mulscalar1", 
+      "attrs": {"scalar": "32"}, 
+      "inputs": [[288, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv30_slice_axis1", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "2", 
+        "end": "4"
+      }, 
+      "inputs": [[270, 0, 0]]
+    }, 
+    {
+      "op": "exp", 
+      "name": "yolov30_yolooutputv30_exp0", 
+      "inputs": [[290, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv30_anchor_0", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv30_anchor_0_140536354994720", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 3, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv30_broadcast_mul0", 
+      "inputs": [[291, 0, 0], [292, 0, 0]]
+    }, 
+    {
+      "op": "_div_scalar", 
+      "name": "yolov30_yolooutputv30__divscalar0", 
+      "attrs": {"scalar": "2.0"}, 
+      "inputs": [[293, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_sub", 
+      "name": "yolov30_yolooutputv30__minus0", 
+      "inputs": [[289, 0, 0], [294, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "yolov30_yolooutputv30__plus0", 
+      "inputs": [[289, 0, 0], [294, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv30_concat0", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "2"
+      }, 
+      "inputs": [[295, 0, 0], [296, 0, 0]]
+    }, 
+    {
+      "op": "tile", 
+      "name": "yolov30_yolooutputv30_tile0", 
+      "attrs": {"reps": "(4, 1, 1, 1, 1)"}, 
+      "inputs": [[297, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv30_concat1", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "3"
+      }, 
+      "inputs": [[281, 0, 0], [277, 0, 0], [298, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv30_transpose2", 
+      "attrs": {"axes": "(1, 0, 2, 3, 4)"}, 
+      "inputs": [[299, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv30_reshape4", 
+      "attrs": {"shape": "(0, -1, 6)"}, 
+      "inputs": [[300, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[256, 0, 0], [302, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm0_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm0_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm0_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm0_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_batchnorm0_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[303, 0, 0], [304, 0, 0], [305, 0, 0], [306, 0, 2], [307, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_leakyrelu0_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[308, 0, 0]]
+    }, 
+    {
+      "op": "repeat", 
+      "name": "yolov30_repeat0", 
+      "attrs": {
+        "axis": "-1", 
+        "repeats": "2"
+      }, 
+      "inputs": [[309, 0, 0]]
+    }, 
+    {
+      "op": "repeat", 
+      "name": "yolov30_repeat1", 
+      "attrs": {
+        "axis": "-2", 
+        "repeats": "2"
+      }, 
+      "inputs": [[310, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30__mulscalar0", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[184, 0, 0]]
+    }, 
+    {
+      "op": "slice_like", 
+      "name": "yolov30_slice_like0", 
+      "attrs": {"axes": "(2, 3)"}, 
+      "inputs": [[311, 0, 0], [312, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_concat0", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "2"
+      }, 
+      "inputs": [[313, 0, 0], [184, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[314, 0, 0], [315, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm0_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm0_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm0_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm0_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm0_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[316, 0, 0], [317, 0, 0], [318, 0, 0], [319, 0, 2], [320, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu0_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[321, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv1_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[322, 0, 0], [323, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm1_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm1_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm1_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm1_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm1_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[324, 0, 0], [325, 0, 0], [326, 0, 0], [327, 0, 2], [328, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu1_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[329, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv2_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv2_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[330, 0, 0], [331, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm2_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm2_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm2_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm2_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm2_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[332, 0, 0], [333, 0, 0], [334, 0, 0], [335, 0, 2], [336, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu2_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[337, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv3_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv3_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[338, 0, 0], [339, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm3_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm3_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm3_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm3_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm3_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[340, 0, 0], [341, 0, 0], [342, 0, 0], [343, 0, 2], [344, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu3_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[345, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv4_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv4_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[346, 0, 0], [347, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm4_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm4_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm4_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm4_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm4_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[348, 0, 0], [349, 0, 0], [350, 0, 0], [351, 0, 2], [352, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu4_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[353, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_conv5_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv31_conv5_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[354, 0, 0], [355, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm5_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm5_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm5_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm5_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv31_batchnorm5_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[356, 0, 0], [357, 0, 0], [358, 0, 0], [359, 0, 2], [360, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv31_leakyrelu5_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[361, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv31_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv31_conv0_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolooutputv31_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "27", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[362, 0, 0], [363, 0, 0], [364, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv31_reshape0", 
+      "attrs": {"shape": "(0, 27, -1)"}, 
+      "inputs": [[365, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv31_transpose0", 
+      "attrs": {"axes": "(0, 2, 1)"}, 
+      "inputs": [[366, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv31_reshape1", 
+      "attrs": {"shape": "(0, -1, 3, 9)"}, 
+      "inputs": [[367, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv31_slice_axis3", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "5", 
+        "end": "None"
+      }, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv31_sigmoid2", 
+      "inputs": [[369, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv31_slice_axis2", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "4", 
+        "end": "5"
+      }, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv31_sigmoid1", 
+      "inputs": [[371, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv31_broadcast_mul1", 
+      "inputs": [[370, 0, 0], [372, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv31_transpose1", 
+      "attrs": {"axes": "(3, 0, 1, 2)"}, 
+      "inputs": [[373, 0, 0]]
+    }, 
+    {
+      "op": "expand_dims", 
+      "name": "yolov30_yolooutputv31_expand_dims0", 
+      "attrs": {"axis": "-1"}, 
+      "inputs": [[374, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv31__mulscalar2", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[375, 0, 0]]
+    }, 
+    {
+      "op": "_arange", 
+      "name": "yolov30_yolooutputv31__arange0", 
+      "attrs": {
+        "dtype": "float32", 
+        "infer_range": "False", 
+        "repeat": "1", 
+        "start": "0", 
+        "step": "1.0", 
+        "stop": "4"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv31_reshape3", 
+      "attrs": {"shape": "(0, 1, 1, 1, 1)"}, 
+      "inputs": [[377, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv31_broadcast_add1", 
+      "inputs": [[376, 0, 0], [378, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv31_slice_axis0", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "0", 
+        "end": "2"
+      }, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv31_sigmoid0", 
+      "inputs": [[380, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv31_offset_1", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv31_offset_1_140536355070528", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 128, 128, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv31__mulscalar0", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[362, 0, 0]]
+    }, 
+    {
+      "op": "slice_like", 
+      "name": "yolov30_yolooutputv31_slice_like0", 
+      "attrs": {"axes": "(2, 3)"}, 
+      "inputs": [[382, 0, 0], [383, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv31_reshape2", 
+      "attrs": {"shape": "(1, -1, 1, 2)"}, 
+      "inputs": [[384, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv31_broadcast_add0", 
+      "inputs": [[381, 0, 0], [385, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv31__mulscalar1", 
+      "attrs": {"scalar": "16"}, 
+      "inputs": [[386, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv31_slice_axis1", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "2", 
+        "end": "4"
+      }, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "exp", 
+      "name": "yolov30_yolooutputv31_exp0", 
+      "inputs": [[388, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv31_anchor_1", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv31_anchor_1_140536355070472", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 3, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv31_broadcast_mul0", 
+      "inputs": [[389, 0, 0], [390, 0, 0]]
+    }, 
+    {
+      "op": "_div_scalar", 
+      "name": "yolov30_yolooutputv31__divscalar0", 
+      "attrs": {"scalar": "2.0"}, 
+      "inputs": [[391, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_sub", 
+      "name": "yolov30_yolooutputv31__minus0", 
+      "inputs": [[387, 0, 0], [392, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "yolov30_yolooutputv31__plus0", 
+      "inputs": [[387, 0, 0], [392, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv31_concat0", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "2"
+      }, 
+      "inputs": [[393, 0, 0], [394, 0, 0]]
+    }, 
+    {
+      "op": "tile", 
+      "name": "yolov30_yolooutputv31_tile0", 
+      "attrs": {"reps": "(4, 1, 1, 1, 1)"}, 
+      "inputs": [[395, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv31_concat1", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "3"
+      }, 
+      "inputs": [[379, 0, 0], [375, 0, 0], [396, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv31_transpose2", 
+      "attrs": {"axes": "(1, 0, 2, 3, 4)"}, 
+      "inputs": [[397, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv31_reshape4", 
+      "attrs": {"shape": "(0, -1, 6)"}, 
+      "inputs": [[398, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_conv1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 128, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_conv1_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[354, 0, 0], [400, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm1_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm1_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm1_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_batchnorm1_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_batchnorm1_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[401, 0, 0], [402, 0, 0], [403, 0, 0], [404, 0, 2], [405, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_leakyrelu1_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[406, 0, 0]]
+    }, 
+    {
+      "op": "repeat", 
+      "name": "yolov30_repeat2", 
+      "attrs": {
+        "axis": "-1", 
+        "repeats": "2"
+      }, 
+      "inputs": [[407, 0, 0]]
+    }, 
+    {
+      "op": "repeat", 
+      "name": "yolov30_repeat3", 
+      "attrs": {
+        "axis": "-2", 
+        "repeats": "2"
+      }, 
+      "inputs": [[408, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30__mulscalar1", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[88, 0, 0]]
+    }, 
+    {
+      "op": "slice_like", 
+      "name": "yolov30_slice_like1", 
+      "attrs": {"axes": "(2, 3)"}, 
+      "inputs": [[409, 0, 0], [410, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_concat1", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "2"
+      }, 
+      "inputs": [[411, 0, 0], [88, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 192, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[412, 0, 0], [413, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm0_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm0_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm0_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm0_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm0_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[414, 0, 0], [415, 0, 0], [416, 0, 0], [417, 0, 2], [418, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu0_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[419, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv1_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[420, 0, 0], [421, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm1_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm1_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm1_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm1_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm1_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[422, 0, 0], [423, 0, 0], [424, 0, 0], [425, 0, 2], [426, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu1_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[427, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv2_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv2_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[428, 0, 0], [429, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm2_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm2_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm2_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm2_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm2_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[430, 0, 0], [431, 0, 0], [432, 0, 0], [433, 0, 2], [434, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu2_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[435, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv3_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv3_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[436, 0, 0], [437, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm3_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm3_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm3_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm3_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm3_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[438, 0, 0], [439, 0, 0], [440, 0, 0], [441, 0, 2], [442, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu3_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[443, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv4_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv4_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[444, 0, 0], [445, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm4_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm4_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm4_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm4_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm4_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[446, 0, 0], [447, 0, 0], [448, 0, 0], [449, 0, 2], [450, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu4_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[451, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_conv5_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256, 128, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolodetectionblockv32_conv5_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[452, 0, 0], [453, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm5_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm5_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm5_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm5_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(256,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "yolov30_yolodetectionblockv32_batchnorm5_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[454, 0, 0], [455, 0, 0], [456, 0, 0], [457, 0, 2], [458, 0, 2]]
+    }, 
+    {
+      "op": "LeakyReLU", 
+      "name": "yolov30_yolodetectionblockv32_leakyrelu5_fwd", 
+      "attrs": {
+        "act_type": "leaky", 
+        "slope": "0.1"
+      }, 
+      "inputs": [[459, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv32_conv0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27, 256, 1, 1)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv32_conv0_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(27,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "yolov30_yolooutputv32_conv0_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "27", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[460, 0, 0], [461, 0, 0], [462, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv32_reshape0", 
+      "attrs": {"shape": "(0, 27, -1)"}, 
+      "inputs": [[463, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv32_transpose0", 
+      "attrs": {"axes": "(0, 2, 1)"}, 
+      "inputs": [[464, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv32_reshape1", 
+      "attrs": {"shape": "(0, -1, 3, 9)"}, 
+      "inputs": [[465, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv32_slice_axis3", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "5", 
+        "end": "None"
+      }, 
+      "inputs": [[466, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv32_sigmoid2", 
+      "inputs": [[467, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv32_slice_axis2", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "4", 
+        "end": "5"
+      }, 
+      "inputs": [[466, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv32_sigmoid1", 
+      "inputs": [[469, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv32_broadcast_mul1", 
+      "inputs": [[468, 0, 0], [470, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv32_transpose1", 
+      "attrs": {"axes": "(3, 0, 1, 2)"}, 
+      "inputs": [[471, 0, 0]]
+    }, 
+    {
+      "op": "expand_dims", 
+      "name": "yolov30_yolooutputv32_expand_dims0", 
+      "attrs": {"axis": "-1"}, 
+      "inputs": [[472, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv32__mulscalar2", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[473, 0, 0]]
+    }, 
+    {
+      "op": "_arange", 
+      "name": "yolov30_yolooutputv32__arange0", 
+      "attrs": {
+        "dtype": "float32", 
+        "infer_range": "False", 
+        "repeat": "1", 
+        "start": "0", 
+        "step": "1.0", 
+        "stop": "4"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv32_reshape3", 
+      "attrs": {"shape": "(0, 1, 1, 1, 1)"}, 
+      "inputs": [[475, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv32_broadcast_add1", 
+      "inputs": [[474, 0, 0], [476, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv32_slice_axis0", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "0", 
+        "end": "2"
+      }, 
+      "inputs": [[466, 0, 0]]
+    }, 
+    {
+      "op": "sigmoid", 
+      "name": "yolov30_yolooutputv32_sigmoid0", 
+      "inputs": [[478, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv32_offset_2", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv32_offset_2_140536346226760", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 128, 128, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv32__mulscalar0", 
+      "attrs": {"scalar": "0"}, 
+      "inputs": [[460, 0, 0]]
+    }, 
+    {
+      "op": "slice_like", 
+      "name": "yolov30_yolooutputv32_slice_like0", 
+      "attrs": {"axes": "(2, 3)"}, 
+      "inputs": [[480, 0, 0], [481, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv32_reshape2", 
+      "attrs": {"shape": "(1, -1, 1, 2)"}, 
+      "inputs": [[482, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "yolov30_yolooutputv32_broadcast_add0", 
+      "inputs": [[479, 0, 0], [483, 0, 0]]
+    }, 
+    {
+      "op": "_mul_scalar", 
+      "name": "yolov30_yolooutputv32__mulscalar1", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[484, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_yolooutputv32_slice_axis1", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "2", 
+        "end": "4"
+      }, 
+      "inputs": [[466, 0, 0]]
+    }, 
+    {
+      "op": "exp", 
+      "name": "yolov30_yolooutputv32_exp0", 
+      "inputs": [[486, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "yolov30_yolooutputv32_anchor_2", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "Constant_yolov30_yolooutputv32_anchor_2_140536346209920", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 1, 3, 2)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "yolov30_yolooutputv32_broadcast_mul0", 
+      "inputs": [[487, 0, 0], [488, 0, 0]]
+    }, 
+    {
+      "op": "_div_scalar", 
+      "name": "yolov30_yolooutputv32__divscalar0", 
+      "attrs": {"scalar": "2.0"}, 
+      "inputs": [[489, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_sub", 
+      "name": "yolov30_yolooutputv32__minus0", 
+      "inputs": [[485, 0, 0], [490, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "yolov30_yolooutputv32__plus0", 
+      "inputs": [[485, 0, 0], [490, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv32_concat0", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "2"
+      }, 
+      "inputs": [[491, 0, 0], [492, 0, 0]]
+    }, 
+    {
+      "op": "tile", 
+      "name": "yolov30_yolooutputv32_tile0", 
+      "attrs": {"reps": "(4, 1, 1, 1, 1)"}, 
+      "inputs": [[493, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_yolooutputv32_concat1", 
+      "attrs": {
+        "dim": "-1", 
+        "num_args": "3"
+      }, 
+      "inputs": [[477, 0, 0], [473, 0, 0], [494, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "yolov30_yolooutputv32_transpose2", 
+      "attrs": {"axes": "(1, 0, 2, 3, 4)"}, 
+      "inputs": [[495, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "yolov30_yolooutputv32_reshape4", 
+      "attrs": {"shape": "(0, -1, 6)"}, 
+      "inputs": [[496, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "yolov30_concat2", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "3"
+      }, 
+      "inputs": [[301, 0, 0], [399, 0, 0], [497, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_box_nms", 
+      "name": "yolov30_box_nms0", 
+      "attrs": {
+        "coord_start": "2", 
+        "force_suppress": "False", 
+        "id_index": "0", 
+        "overlap_thresh": "0.45", 
+        "score_index": "1", 
+        "topk": "400", 
+        "valid_thresh": "0.01"
+      }, 
+      "inputs": [[498, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_slice_axis0", 
+      "attrs": {
+        "axis": "1", 
+        "begin": "0", 
+        "end": "100"
+      }, 
+      "inputs": [[499, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_slice_axis1", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "0", 
+        "end": "1"
+      }, 
+      "inputs": [[500, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_slice_axis2", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "1", 
+        "end": "2"
+      }, 
+      "inputs": [[500, 0, 0]]
+    }, 
+    {
+      "op": "slice_axis", 
+      "name": "yolov30_slice_axis3", 
+      "attrs": {
+        "axis": "-1", 
+        "begin": "2", 
+        "end": "None"
+      }, 
+      "inputs": [[500, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    1, 
+    3, 
+    4, 
+    5, 
+    6, 
+    9, 
+    11, 
+    12, 
+    13, 
+    14, 
+    17, 
+    19, 
+    20, 
+    21, 
+    22, 
+    25, 
+    27, 
+    28, 
+    29, 
+    30, 
+    33, 
+    35, 
+    36, 
+    37, 
+    38, 
+    41, 
+    43, 
+    44, 
+    45, 
+    46, 
+    49, 
+    51, 
+    52, 
+    53, 
+    54, 
+    57, 
+    59, 
+    60, 
+    61, 
+    62, 
+    65, 
+    67, 
+    68, 
+    69, 
+    70, 
+    73, 
+    75, 
+    76, 
+    77, 
+    78, 
+    81, 
+    83, 
+    84, 
+    85, 
+    86, 
+    89, 
+    91, 
+    92, 
+    93, 
+    94, 
+    97, 
+    99, 
+    100, 
+    101, 
+    102, 
+    105, 
+    107, 
+    108, 
+    109, 
+    110, 
+    113, 
+    115, 
+    116, 
+    117, 
+    118, 
+    121, 
+    123, 
+    124, 
+    125, 
+    126, 
+    129, 
+    131, 
+    132, 
+    133, 
+    134, 
+    137, 
+    139, 
+    140, 
+    141, 
+    142, 
+    145, 
+    147, 
+    148, 
+    149, 
+    150, 
+    153, 
+    155, 
+    156, 
+    157, 
+    158, 
+    161, 
+    163, 
+    164, 
+    165, 
+    166, 
+    169, 
+    171, 
+    172, 
+    173, 
+    174, 
+    177, 
+    179, 
+    180, 
+    181, 
+    182, 
+    185, 
+    187, 
+    188, 
+    189, 
+    190, 
+    193, 
+    195, 
+    196, 
+    197, 
+    198, 
+    201, 
+    203, 
+    204, 
+    205, 
+    206, 
+    209, 
+    211, 
+    212, 
+    213, 
+    214, 
+    217, 
+    219, 
+    220, 
+    221, 
+    222, 
+    225, 
+    227, 
+    228, 
+    229, 
+    230, 
+    233, 
+    235, 
+    236, 
+    237, 
+    238, 
+    241, 
+    243, 
+    244, 
+    245, 
+    246, 
+    249, 
+    251, 
+    252, 
+    253, 
+    254, 
+    257, 
+    259, 
+    260, 
+    261, 
+    262, 
+    265, 
+    266, 
+    284, 
+    292, 
+    302, 
+    304, 
+    305, 
+    306, 
+    307, 
+    315, 
+    317, 
+    318, 
+    319, 
+    320, 
+    323, 
+    325, 
+    326, 
+    327, 
+    328, 
+    331, 
+    333, 
+    334, 
+    335, 
+    336, 
+    339, 
+    341, 
+    342, 
+    343, 
+    344, 
+    347, 
+    349, 
+    350, 
+    351, 
+    352, 
+    355, 
+    357, 
+    358, 
+    359, 
+    360, 
+    363, 
+    364, 
+    382, 
+    390, 
+    400, 
+    402, 
+    403, 
+    404, 
+    405, 
+    413, 
+    415, 
+    416, 
+    417, 
+    418, 
+    421, 
+    423, 
+    424, 
+    425, 
+    426, 
+    429, 
+    431, 
+    432, 
+    433, 
+    434, 
+    437, 
+    439, 
+    440, 
+    441, 
+    442, 
+    445, 
+    447, 
+    448, 
+    449, 
+    450, 
+    453, 
+    455, 
+    456, 
+    457, 
+    458, 
+    461, 
+    462, 
+    480, 
+    488
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    10, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    20, 
+    21, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    30, 
+    31, 
+    32, 
+    33, 
+    34, 
+    35, 
+    36, 
+    37, 
+    40, 
+    41, 
+    42, 
+    43, 
+    44, 
+    45, 
+    46, 
+    47, 
+    50, 
+    51, 
+    52, 
+    53, 
+    54, 
+    55, 
+    56, 
+    57, 
+    60, 
+    61, 
+    62, 
+    63, 
+    64, 
+    65, 
+    66, 
+    67, 
+    70, 
+    71, 
+    72, 
+    73, 
+    74, 
+    75, 
+    76, 
+    77, 
+    80, 
+    81, 
+    82, 
+    83, 
+    84, 
+    85, 
+    86, 
+    87, 
+    90, 
+    91, 
+    92, 
+    93, 
+    94, 
+    95, 
+    96, 
+    97, 
+    100, 
+    101, 
+    102, 
+    103, 
+    104, 
+    105, 
+    106, 
+    107, 
+    110, 
+    111, 
+    112, 
+    113, 
+    114, 
+    115, 
+    116, 
+    117, 
+    120, 
+    121, 
+    122, 
+    123, 
+    124, 
+    125, 
+    126, 
+    127, 
+    130, 
+    131, 
+    132, 
+    133, 
+    134, 
+    135, 
+    136, 
+    137, 
+    140, 
+    141, 
+    142, 
+    143, 
+    144, 
+    145, 
+    146, 
+    147, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    156, 
+    157, 
+    160, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    167, 
+    170, 
+    171, 
+    172, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    180, 
+    181, 
+    182, 
+    183, 
+    184, 
+    185, 
+    186, 
+    187, 
+    190, 
+    191, 
+    192, 
+    193, 
+    194, 
+    195, 
+    196, 
+    197, 
+    200, 
+    201, 
+    202, 
+    203, 
+    204, 
+    205, 
+    206, 
+    207, 
+    210, 
+    211, 
+    212, 
+    213, 
+    214, 
+    215, 
+    216, 
+    217, 
+    220, 
+    221, 
+    222, 
+    223, 
+    224, 
+    225, 
+    226, 
+    227, 
+    230, 
+    231, 
+    232, 
+    233, 
+    234, 
+    235, 
+    236, 
+    237, 
+    240, 
+    241, 
+    242, 
+    243, 
+    244, 
+    245, 
+    246, 
+    247, 
+    250, 
+    251, 
+    252, 
+    253, 
+    254, 
+    255, 
+    256, 
+    257, 
+    260, 
+    261, 
+    262, 
+    263, 
+    264, 
+    265, 
+    266, 
+    267, 
+    270, 
+    271, 
+    272, 
+    273, 
+    274, 
+    275, 
+    276, 
+    277, 
+    280, 
+    281, 
+    282, 
+    283, 
+    284, 
+    285, 
+    286, 
+    287, 
+    290, 
+    291, 
+    292, 
+    293, 
+    294, 
+    295, 
+    296, 
+    297, 
+    300, 
+    301, 
+    302, 
+    303, 
+    304, 
+    305, 
+    306, 
+    307, 
+    310, 
+    311, 
+    312, 
+    313, 
+    314, 
+    315, 
+    316, 
+    317, 
+    320, 
+    321, 
+    322, 
+    323, 
+    324, 
+    325, 
+    326, 
+    327, 
+    330, 
+    331, 
+    332, 
+    333, 
+    334, 
+    335, 
+    336, 
+    337, 
+    338, 
+    339, 
+    340, 
+    341, 
+    342, 
+    343, 
+    344, 
+    345, 
+    346, 
+    347, 
+    348, 
+    349, 
+    350, 
+    351, 
+    352, 
+    353, 
+    354, 
+    355, 
+    356, 
+    357, 
+    358, 
+    359, 
+    360, 
+    361, 
+    362, 
+    363, 
+    364, 
+    365, 
+    366, 
+    367, 
+    368, 
+    369, 
+    370, 
+    371, 
+    372, 
+    373, 
+    374, 
+    377, 
+    378, 
+    379, 
+    380, 
+    381, 
+    382, 
+    383, 
+    384, 
+    385, 
+    386, 
+    387, 
+    388, 
+    389, 
+    392, 
+    393, 
+    394, 
+    395, 
+    396, 
+    397, 
+    398, 
+    399, 
+    402, 
+    403, 
+    404, 
+    405, 
+    406, 
+    407, 
+    408, 
+    409, 
+    412, 
+    413, 
+    414, 
+    415, 
+    416, 
+    417, 
+    418, 
+    419, 
+    422, 
+    423, 
+    424, 
+    425, 
+    426, 
+    427, 
+    428, 
+    429, 
+    432, 
+    433, 
+    434, 
+    435, 
+    436, 
+    437, 
+    438, 
+    439, 
+    442, 
+    443, 
+    444, 
+    445, 
+    446, 
+    447, 
+    448, 
+    449, 
+    450, 
+    451, 
+    452, 
+    453, 
+    454, 
+    455, 
+    456, 
+    457, 
+    458, 
+    459, 
+    460, 
+    461, 
+    462, 
+    463, 
+    464, 
+    465, 
+    466, 
+    467, 
+    468, 
+    469, 
+    470, 
+    471, 
+    472, 
+    473, 
+    474, 
+    475, 
+    476, 
+    477, 
+    478, 
+    479, 
+    480, 
+    481, 
+    482, 
+    483, 
+    484, 
+    485, 
+    486, 
+    489, 
+    490, 
+    491, 
+    492, 
+    493, 
+    494, 
+    495, 
+    496, 
+    497, 
+    498, 
+    499, 
+    500, 
+    501, 
+    504, 
+    505, 
+    506, 
+    507, 
+    508, 
+    509, 
+    510, 
+    511, 
+    514, 
+    515, 
+    516, 
+    517, 
+    518, 
+    519, 
+    520, 
+    521, 
+    524, 
+    525, 
+    526, 
+    527, 
+    528, 
+    529, 
+    530, 
+    531, 
+    534, 
+    535, 
+    536, 
+    537, 
+    538, 
+    539, 
+    540, 
+    541, 
+    544, 
+    545, 
+    546, 
+    547, 
+    548, 
+    549, 
+    550, 
+    551, 
+    554, 
+    555, 
+    556, 
+    557, 
+    558, 
+    559, 
+    560, 
+    561, 
+    562, 
+    563, 
+    564, 
+    565, 
+    566, 
+    567, 
+    568, 
+    569, 
+    570, 
+    571, 
+    572, 
+    573, 
+    574, 
+    575, 
+    576, 
+    577, 
+    578, 
+    579, 
+    580, 
+    581, 
+    582, 
+    583, 
+    584, 
+    585, 
+    586, 
+    587, 
+    588, 
+    589, 
+    590, 
+    591, 
+    592, 
+    593, 
+    595, 
+    596, 
+    597, 
+    598, 
+    599
+  ], 
+  "heads": [[501, 0, 0], [502, 0, 0], [503, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10500]}
+}
